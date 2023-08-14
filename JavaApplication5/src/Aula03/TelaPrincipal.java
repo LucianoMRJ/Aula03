@@ -81,6 +81,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(rootPane, str, "Atenção", JOptionPane.WARNING_MESSAGE);
         campoTexto01.setText("");
         campoTexto01.grabFocus();
+        
     }//GEN-LAST:event_botaoGravarActionPerformed
 
     /**
