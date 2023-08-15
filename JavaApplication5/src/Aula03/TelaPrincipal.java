@@ -28,9 +28,18 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        campoTexto01 = new javax.swing.JTextField();
+        campoTexto1 = new javax.swing.JTextField();
         botaoGravar = new javax.swing.JButton();
-        jLabel01 = new javax.swing.JLabel();
+        campoTexto2 = new javax.swing.JTextField();
+        campoTexto3 = new javax.swing.JTextField();
+        campoTexto4 = new javax.swing.JTextField();
+        campoTexto5 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -41,7 +50,41 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jLabel01.setText("Olá Mundo");
+        campoTexto2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoTexto2ActionPerformed(evt);
+            }
+        });
+
+        campoTexto3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoTexto3ActionPerformed(evt);
+            }
+        });
+
+        campoTexto4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoTexto4ActionPerformed(evt);
+            }
+        });
+
+        campoTexto5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoTexto5ActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("Nome:");
+
+        jLabel2.setText("Endereço:");
+
+        jLabel3.setText("Email:");
+
+        jLabel4.setText("Telefone:");
+
+        jLabel5.setText("Observações:");
+
+        jLabel6.setText("Insira suas informações");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -49,40 +92,90 @@ public class TelaPrincipal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(campoTexto01)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(154, 154, 154)
+                        .addComponent(botaoGravar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(86, 86, 86)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(campoTexto5)
+                            .addComponent(campoTexto4)
+                            .addComponent(campoTexto3)
+                            .addComponent(campoTexto1)
+                            .addComponent(campoTexto2)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(159, 159, 159)
-                                .addComponent(botaoGravar))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(178, 178, 178)
-                                .addComponent(jLabel01)))
-                        .addGap(0, 154, Short.MAX_VALUE)))
-                .addContainerGap())
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel1))
+                                .addGap(0, 168, Short.MAX_VALUE)))))
+                .addGap(74, 74, 74))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(108, 108, 108))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addComponent(jLabel01)
-                .addGap(78, 78, 78)
-                .addComponent(campoTexto01, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(92, 92, 92)
+                .addContainerGap()
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(campoTexto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(campoTexto3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addGap(1, 1, 1)
+                .addComponent(campoTexto2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(campoTexto4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(campoTexto5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                 .addComponent(botaoGravar)
-                .addContainerGap(97, Short.MAX_VALUE))
+                .addGap(35, 35, 35))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void botaoGravarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoGravarActionPerformed
-        String str = campoTexto01.getText();
-        JOptionPane.showMessageDialog(rootPane, str, "Atenção", JOptionPane.WARNING_MESSAGE);
-        campoTexto01.setText("");
-        campoTexto01.grabFocus();
+        JOptionPane.showMessageDialog(rootPane, "Informações gravadas com sucesso", "Atenção", JOptionPane.WARNING_MESSAGE);
+        campoTexto1.setText("");
+        campoTexto2.setText("");
+        campoTexto3.setText("");
+        campoTexto4.setText("");
+        campoTexto5.setText("");
+        campoTexto1.grabFocus();
         
     }//GEN-LAST:event_botaoGravarActionPerformed
+
+    private void campoTexto2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoTexto2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoTexto2ActionPerformed
+
+    private void campoTexto3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoTexto3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoTexto3ActionPerformed
+
+    private void campoTexto4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoTexto4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoTexto4ActionPerformed
+
+    private void campoTexto5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoTexto5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoTexto5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -121,7 +214,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botaoGravar;
-    private javax.swing.JTextField campoTexto01;
-    private javax.swing.JLabel jLabel01;
+    private javax.swing.JTextField campoTexto1;
+    private javax.swing.JTextField campoTexto2;
+    private javax.swing.JTextField campoTexto3;
+    private javax.swing.JTextField campoTexto4;
+    private javax.swing.JTextField campoTexto5;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }
